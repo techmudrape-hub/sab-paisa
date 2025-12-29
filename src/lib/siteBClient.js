@@ -1,5 +1,3 @@
-import { createHmacSha256Signature } from '@/lib/crypto/signature'
-
 const requiredFields = ['referenceId', 'amount', 'type', 'description', 'metadata', 'createdAt']
 
 function validateTransaction(txn) {
@@ -17,6 +15,8 @@ export async function sendTransactionToSiteB(transactions) {
     if (!process.env.SITE_B_ENDPOINT) {
       throw new Error('Missing SITE_B_ENDPOINT environment variable')
     }
+    // Dynamic import for server-only crypto module
+    const { createHmacSha256Signature } = await import('@/lib/crypto/signature')
     const { json, signatureHex } = createHmacSha256Signature(transactions)
     const serverHeaders = {
       'Content-Type': 'application/json',

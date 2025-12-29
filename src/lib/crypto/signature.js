@@ -1,4 +1,4 @@
-import crypto from 'node:crypto'
+import crypto from 'crypto'
 
 export function createHmacSha256Signature(payloadObject) {
   if (!process.env.SHARED_SECRET) {

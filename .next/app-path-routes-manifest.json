@@ -1,0 +1,11 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/api/payment/callback/route": "/api/payment/callback",
+  "/api/transactions/route": "/api/transactions",
+  "/favicon.ico/route": "/favicon.ico",
+  "/page": "/",
+  "/test-transaction/page": "/test-transaction",
+  "/payment-status-demo/page": "/payment-status-demo",
+  "/transactions/page": "/transactions",
+  "/response/page": "/response"
+}
