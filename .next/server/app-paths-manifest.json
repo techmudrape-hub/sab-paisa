@@ -1,11 +1,12 @@
 {
+  "/_global-error/page": "app/_global-error/page.js",
   "/_not-found/page": "app/_not-found/page.js",
   "/api/payment/callback/route": "app/api/payment/callback/route.js",
   "/api/transactions/route": "app/api/transactions/route.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/page": "app/page.js",
-  "/test-transaction/page": "app/test-transaction/page.js",
+  "/response/page": "app/response/page.js",
   "/payment-status-demo/page": "app/payment-status-demo/page.js",
+  "/page": "app/page.js",
   "/transactions/page": "app/transactions/page.js",
-  "/response/page": "app/response/page.js"
+  "/test-transaction/page": "app/test-transaction/page.js"
 }
